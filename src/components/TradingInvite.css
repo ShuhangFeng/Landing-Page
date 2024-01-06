@@ -1,0 +1,66 @@
+/* TradingInvite.css */
+.trading-invite {
+    padding: 20px;
+  }
+  
+  .trading-header h1 {
+    color: #EED345;
+    text-align: center;
+    text-shadow:  0px 0px 7161.83984375px #EED345;
+    font-family: Chakra Petch;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 61.6px; /* 123.2% */
+  }
+  
+
+  .trading-stats {
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    gap: 20px; /* Adds space between each item */
+  }
+  
+
+  .trading-stats div {
+
+    color: #EED345;
+    text-align: center;
+    font-family: Chakra Petch;
+    font-size: 50px;
+  }
+  
+  .trading-question h2 {
+    color: yellow;
+    text-align: center;
+  }
+  
+  .trading-cards {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .trading-card {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    /* Add more styling */
+  }
+  
+  .trading-card h3 {
+    /* Styling for card title */
+  }
+  
+  .card-details {
+    /* Styling for card details */
+  }
+  
+  .card-details span {
+    /* Styling for floor price and value */
+  }
+  
+  .card-details button {
+    /* Styling for buttons */
+  }
+  

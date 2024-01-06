@@ -1,0 +1,102 @@
+.trending-slider-container {
+  overflow: hidden;
+  position: relative;
+  display: flex; /* Use flexbox to layout slide and card stack side by side */
+  align-items: center; /* Center items vertically */
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+.trending-slide {
+  display: flex;
+  width: 100%; /* Ensure the slide takes the full width of the container */
+  transition: transform 0.5s ease;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.slide-image-container {
+  flex: 1; /* Take up half the space */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+}
+
+.card-stack {
+  flex: 1; /* Take up the other half of the space */
+  position: relative; /* Position the cards absolutely within this container */
+  display: flex;
+  justify-content: center; /* Center cards within the card stack */
+  align-items: flex-start; /* Align cards to the top */
+}
+  
+  .trending-slide img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  .trending-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for buttons */
+    color: white; /* Button icon color */
+    padding: 0.5em; /* Padding around the button content */
+    border-radius: 50%; /* Circular buttons */
+  }
+  
+  .trending-button-prev {
+    left: 10px;
+  }
+  
+  .trending-button-next {
+    right: 10px;
+  }
+
+.trending-slide p {
+    color: #dfd6a7;
+    background-color: black;
+    font-family: 'Chakra Petch', sans-serif; 
+  }
+  
+  /* ... other styles ... */
+  
+
+  .card {
+    position: absolute;
+    width: 200px; /* Adjust as necessary */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: white;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 4px;
+  }
+  
+  .card:nth-child(1) {
+    transform: rotate(-5deg);
+    z-index: 3;
+  }
+  
+  .card:nth-child(2) {
+    transform: rotate(1deg);
+    z-index: 2;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .card:nth-child(3) {
+    transform: rotate(5deg);
+    z-index: 1;
+    top: 40px;
+    right: 40px;
+  }
+  

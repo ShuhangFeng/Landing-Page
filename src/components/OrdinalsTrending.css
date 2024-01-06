@@ -1,0 +1,59 @@
+.ordinals-trending {
+    color: #dfd6a7;
+    background-color: black;
+    font-family: 'Chakra Petch', sans-serif;
+    padding: 20px;
+  }
+  
+  .title {
+    display: flex;        /* Use flexbox to layout the children */
+    justify-content: space-between; /* Aligns children with space between */
+    align-items: center;  /* Aligns children vertically in the center */
+    padding: 100px;
+  }
+
+  .ordinals-trending .title h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .ordinal-header {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .ordinal-item {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .ordinal-item img {
+    width: 50px; /* Set your desired size */
+    height: 50px;
+    margin: 0 auto;
+  }
+  
+  .positive {
+    color: #00ff00;
+  }
+  
+  .negative {
+    color: #ff0000;
+  }
+  
+  .dashboard-button {
+  display: block; /* or 'inline-block' if you want it to be in line with other elements */
+  padding: 10px;
+  background-color: #dfd6a7;
+  color: black;
+  border: none;
+  cursor: pointer;
+  width: auto; /* Adjust as necessary, could be any specific width like 200px */
+  margin-top: 20px;
+  margin-right: 0; /* Align to the right if in a flex container with space-between */
+}

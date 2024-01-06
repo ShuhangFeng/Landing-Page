@@ -1,0 +1,97 @@
+.introduction {
+  padding-top: 120px;
+}
+
+.introduction .text-wrapper {
+  color: #dfd6a7;
+  font-family: "Chakra Petch", Helvetica;
+  font-size: 22px;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.introduction .image-gallery {
+  display: flex;
+  position: relative;
+}
+
+.trade-discover {
+  padding-right: 1000px;
+  position: absolute; 
+  top: 0; 
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  
+  color: #dfd6a7;
+  font-family: "Chakra Petch", Helvetica;
+  font-size: 30px;
+  z-index: 2;
+}
+
+/* Container for the slideshow */
+.intro_slideshow {
+  width: 600px; /* example width */
+  height: 400px; /* example height */
+  position: relative;
+  overflow: hidden; /* hide parts of the image that overflow the container */
+}
+
+/* Styles for each image in the slideshow */
+.intro_slideshow img {
+  width: 100%; /* make image width fill the container */
+  height: 100%; /* make image height fill the container */
+  object-fit: cover; /* cover the container, might crop part of the image */
+  object-position: center; /* center the image in the container */
+}
+
+
+.nft-text {
+  color: #FFF;
+  /* Example: Green color */
+  text-decoration: red line-through;
+}
+
+ .trade-button {
+  padding: 10px 60px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 12px;
+  border: 0px solid rgba(255, 255, 255, 0.38);
+  background: linear-gradient(119deg,
+      rgba(255, 255, 255, 0.4) 14.38%,
+      rgba(217, 217, 217, 0.1) 67.9%);
+  box-shadow: 0px 4px 24px 1px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+
+  color: #DFD6A7;
+  text-align: center;
+  font-family: Chakra Petch;
+  font-size: 25px;
+  font-style: normal;
+  z-index: 2;
+ }
+
+.image-gallery .intro_background {
+  width: 100%;
+  /* Ensure the image fills the container */
+  height: 800px;
+  /* Set a fixed height for the image */
+  display: block;
+  /* Remove extra space below the image */
+  filter: brightness(50%);
+  /* Apply brightness filter */
+  object-fit: cover;
+  /* Resize the image to cover the container */
+  object-position: top;
+  /* Align the top part of the image with the container */
+}
+
+

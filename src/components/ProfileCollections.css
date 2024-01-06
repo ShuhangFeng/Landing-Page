@@ -1,0 +1,27 @@
+.profile-collection {
+    /* existing styles */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    /* other existing styles */
+}
+
+.profile-collection .first-heading {
+    font-family: "Font1", sans-serif; /* Replace Font1 with your desired font */
+    font-size: 24px; /* Adjust size as needed */
+    color:#E6CD4A; /* Replace with desired color */
+    /* other styles as needed */
+}
+
+.profile-collection .second-heading {
+    font-family: "Font2", sans-serif; /* Replace Font2 with your desired font */
+    font-size: 20px; /* Adjust size as needed */
+    color: #DFD6A7; /* Replace with desired color */
+    /* other styles as needed */
+}
+
+.profile-collection .trade-button {
+    font-family: "Font2", sans-serif; /* Replace Font2 with your desired font */
+    font-size: 20px; /* Adjust size as needed */
+    color: #DFD6A7; /* Replace with desired color */
+    /* other styles as needed */
+}

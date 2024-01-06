@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap');
+
+.header {
+  position: fixed; /* Keep it fixed or use absolute for relative positioning */
+  top: 50px; /* Adjust as needed to place the header lower on the page */
+  left: 50%; /* Center the header */
+  transform: translateX(-50%); /* Offset the header by half its width to center it */
+  width: 80%; /* Adjust width as needed */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  padding: 25px 50px; /* Adjust the padding as needed, maybe less on the sides */
+  z-index: 10; /* Ensure it stays on top */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional: adds shadow for floating effect */
+}
+
+.header::before,
+.header::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 50px; /* Adjust for the size of the circle */
+  height: 95px; /* Adjust for the size of the circle */
+  background: black;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.header::before {
+  left: -25px; /* Half of the width to make it center on the edge */
+}
+
+.header::after {
+  right: -25px; /* Half of the width to make it center on the edge */
+}
+
+/* Further styling for search bar, navigation links, and connect button */
+.header .text-wrapper {
+    color: #dfd6a7;
+    font-family: "Chakra Petch", Helvetica;
+    font-size: 22px;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+
+.header .text-wrapper-2::placeholder {
+    color: #dfd6a7;
+    font-family: "Chakra Petch", Helvetica;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+
+  .connect-button {
+    color: #dfd6a7;
+    font-family: "Chakra Petch", Helvetica;
+    font-size: 22px;
+    text-decoration: none;
+    margin-right: 20px;
+
+    border: #dfd6a7; /* Remove default border */
+    outline: #dfd6a7; /* Remove focus outline */
+    background-color: black; /* Set your desired background color */
+    border-radius: 50px; /* Large border-radius creates pill shape */
+    padding: 10px 20px; /* Add padding to increase the size and make it oval */
+    cursor: pointer; /* Changes cursor to signify button is clickable */
+    transition: background-color 0.3s; /* Optional: Adds a transition effect on hover */
+}
